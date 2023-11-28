@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <section>
+            <!--* Um campo de entrada de texto onde o resultado e as entradas são exibidos. -->
+            <!--* O atributo readeonly impede que o usuário edite manualmente o campo do input-->
+            <input type="text" id="displayContent" readonly> 
+        </section>
+
+        <!--* Criando os botões da calculadora -->
+        <section>
+            <div>
+                <button class="btn" onclick="calc.clearDisplay('C')">C</button>
+                <button class="btn" onclick="calc.appenToDisplay('/')">/</button>
+            </div>
+
+            <div>
+                <button class="btn" onclick="calc.appenToDisplay('7')">7</button>
+                <button class="btn" onclick="calc.appenToDisplay('8')">8</button>
+                <button class="btn" onclick="calc.appenToDisplay('9')">9</button>
+                <button class="btn" onclick="calc.appenToDisplay('*')">*</button>
+            </div>
+
+            <div>
+                <button class="btn" onclick="calc.appenToDisplay('4')">4</button>
+                <button class="btn" onclick="calc.appenToDisplay('5')">5</button>
+                <button class="btn" onclick="calc.appenToDisplay('6')">6</button>
+                <button class="btn" onclick="calc.appenToDisplay('-')">-</button>
+            </div>
+
+            <div>
+                <button class="btn" onclick="calc.appenToDisplay('1')">1</button>
+                <button class="btn" onclick="calc.appenToDisplay('2')">2</button>
+                <button class="btn" onclick="calc.appenToDisplay('3')">3</button>
+                <button class="btn" onclick="calc.appenToDisplay('+')">+</button>
+            </div>
+
+            <div>
+                <button class="btn" onclick="calc.appenToDisplay('0')">0</button>
+                <button class="btn" onclick="calc.appenToDisplay('.')">.</button>
+                <button class="btn" onclick="calc.calculate('=')">=</button>
+            </div>  
+        </section>
+    </main>
+    <!-- Aqui é a entrada para o JavaScript-->
+    <script src="script.js"></script>
+</body>
+</html>
